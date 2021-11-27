@@ -1,0 +1,97 @@
+.avatarBar{
+    display: flex;
+    
+    &.column{
+        flex-direction: column;
+    }
+    &.row{
+        flex-direction: row;
+    }
+    &.column-row{
+        flex-direction: row;
+    }
+    .avatarImg{
+        cursor: pointer;
+        border-radius: 2px;
+        overflow: hidden;
+        &.square{
+
+        }
+        &.circular{
+            border-radius: 999px;
+        }
+        &.smaller{
+            width: 24px;
+            height: 24px;
+        }
+        &.small{
+            width: 30px;
+            height: 30px;
+        }
+        &.smallplus{
+            width: 37px;
+            height: 37px;
+        }
+        &.middle{
+            width: 72px;
+            height: 72px;
+        }
+        &.large{
+            width: 160px;
+            height: 160px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .useInfo{
+        display: flex;
+        
+        &.column{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &.row{
+            flex-direction: row;
+            align-items: center;
+            padding-left: 9px;
+            .userTitle{
+                padding-left: 9px;
+            }
+        }
+        &.column-row{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 9px;
+            justify-content: space-around;
+            
+        }
+        &.smaller{
+            height: 24px;
+        }
+        &.small{
+            height: 30px;
+        }
+        &.smallplus{
+            height: 37px;
+        }
+        &.middle{
+            height: 72px;
+        }
+        &.large{
+            height: 160px;
+        }
+
+        .userName{
+            font-weight: 600;
+            color: #444;
+        }
+        .userTitle{
+            color: #646464;
+            font-size: 12px;
+        }
+    }
+   
+}

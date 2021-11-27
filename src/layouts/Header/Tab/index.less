@@ -1,0 +1,37 @@
+.tabList{
+    display: flex;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 15px;
+    li{
+        font-size: 15px;
+        opacity: 0.75;
+        padding: 0 14px;
+        height: 100%;
+        &.tabItem{
+           
+         
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+            color: #333;
+            &.active{
+                color:#06f;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 4px;
+                    background: #06f;
+                    bottom: 0;
+                }
+            }
+            
+        }
+    }
+}
