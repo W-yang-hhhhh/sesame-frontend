@@ -1,0 +1,56 @@
+
+
+.articleContainer{
+    width: 750px;
+    background: #fff;
+    padding: 0 20px;
+    .articleHeader{
+        height: 50px;
+        border-bottom: 1px solid #f6f6f6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .answers{
+            color: #666;
+        }
+        .orderBy{
+            color: #666;
+            cursor: pointer;
+        }
+    }
+    .articleAnswers{
+        .answersItem{
+            border-bottom:1px solid #f6f6f6 ;
+            .item{
+                margin-top: 10px;
+            }
+            .voters{
+                font-size: 14px;
+                color: #8590a6;
+                padding: 7px 0;
+            }
+            .textArea{
+                position: relative;
+                .moreArea{
+                    position: absolute;
+                    width: 100%;
+                    background:linear-gradient(to top ,rgba(255,255,255,1),rgba(255,255,255,0.95),rgba(255,255,255,0.5));
+                    bottom: 0;
+                    left: 0;
+                    height: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #175199;
+                    cursor: pointer;
+                    // &:hover{
+                    //     color: #3c6494;
+                    // }
+                }
+            }
+            .bottomTools{
+            padding: 10px 0;
+            }
+        }
+    }
+}

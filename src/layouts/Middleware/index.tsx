@@ -1,4 +1,5 @@
 import HomeHeader from './Home/Header/index'
+import Ask from '@/pages/Article/Ask'
 import { useLocation } from 'umi';
 /**
  * 这个layout中间件用于处理，main区域外的特殊的layout布局,
@@ -12,6 +13,8 @@ export default ({children}:{children:React.DetailedHTMLProps<React.HTMLAttribute
         switch(params){
             case '/':
                 return<HomeHeader />
+            case '/post/123':
+                return <Ask />
             default:
                 null;
         }

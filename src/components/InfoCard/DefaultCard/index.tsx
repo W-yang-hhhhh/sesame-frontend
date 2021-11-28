@@ -28,7 +28,7 @@ export default () => {
                 </div>
                 <div className={styles.articlMainBody}>
                     <div className={styles.articleTitle}>
-                        <Link className='MainTitle' to='#'>
+                        <Link className='MainTitle' to='/post/123'>
                             国足出线概率仅为0.01%你怎么看？
                         </Link>
                     </div>

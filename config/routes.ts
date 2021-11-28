@@ -29,7 +29,7 @@ const routes: IConfig['routes'] = [
             },
             {
                 path: '/post/:id',
-                component: '@/pages/Question/index.tsx',
+                component: '@/pages/Article/index.tsx',
 
             },
         ]
