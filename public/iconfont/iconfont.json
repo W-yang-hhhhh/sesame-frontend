@@ -1,0 +1,100 @@
+{
+  "id": "2983981",
+  "name": "sesame",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "863200",
+      "name": "删除X",
+      "font_class": "shanchux",
+      "unicode": "e70d",
+      "unicode_decimal": 59149
+    },
+    {
+      "icon_id": "1393595",
+      "name": "编辑器 · 加粗",
+      "font_class": "bold",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "1393665",
+      "name": "编辑器 · 图片",
+      "font_class": "image",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "1393668",
+      "name": "编辑器 · 代码",
+      "font_class": "insert_tag_field",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "1393670",
+      "name": "编辑器 · 斜体",
+      "font_class": "italic",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "1393690",
+      "name": "编辑器 · 添加链接",
+      "font_class": "link",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    },
+    {
+      "icon_id": "1393735",
+      "name": "编辑器 · 引用",
+      "font_class": "quotation_marks",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "1393750",
+      "name": "编辑器 · 无序列表",
+      "font_class": "richtextbulletedlist",
+      "unicode": "e71a",
+      "unicode_decimal": 59162
+    },
+    {
+      "icon_id": "1393752",
+      "name": "编辑器 · 有序列表",
+      "font_class": "richtextnumberedlist",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
+      "icon_id": "6179181",
+      "name": "任务",
+      "font_class": "renwu",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "18171261",
+      "name": "表格",
+      "font_class": "sheet-full",
+      "unicode": "ea3c",
+      "unicode_decimal": 59964
+    },
+    {
+      "icon_id": "21918686",
+      "name": "代码",
+      "font_class": "daima",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "23719412",
+      "name": "字体标题",
+      "font_class": "zitibiaoti",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    }
+  ]
+}

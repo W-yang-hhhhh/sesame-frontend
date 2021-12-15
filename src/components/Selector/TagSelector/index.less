@@ -1,18 +1,26 @@
-
-
-.topicContainer{
-
-    .topicItem{
-        display: inline-block;
-        padding: 5px 6px;
-        color: #477399;
-        background: #e3ecf3;
-        font-size: 12px;
-        border-radius: 3px;
-        margin: 2px;
-        cursor: pointer;
-        &:hover{
-
-        }
+.topicContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .topicItem {
+    display: flex;
+    padding: 3px 10px;
+    color: #477399;
+    background: #e3ecf3;
+    font-size: 12px;
+    border-radius: 3px;
+    margin: 2px;
+    cursor: pointer;
+    .topicText {
+      padding-right: 5px;
     }
+    .close {
+      color: #578dbd;
+      font-size: 15px;
+      margin-left: 8px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }

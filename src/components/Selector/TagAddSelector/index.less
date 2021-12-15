@@ -1,0 +1,49 @@
+.addtag {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  .tagSearchContainer {
+    position: relative;
+    .tagSearch {
+      width: 170px;
+      padding: 2px 5px;
+      border-radius: 8px;
+      border: 1px solid #f1f1f1;
+      margin-right: 5px;
+    }
+    .searchSelector {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      border: 1px solid #f3f3f3;
+      background-color: #fff;
+      z-index: 3;
+      border-radius: 4px;
+      padding: 4px 0;
+      max-height: 300px;
+      overflow-y: scroll;
+      span {
+        display: flex;
+        padding: 4px 7px;
+        // margin-top: 2px;
+        font-size: 13px;
+        color: #333;
+        cursor: pointer;
+        &.isSelscted {
+          background-color: rgba(0, 102, 255, 0.1);
+          color: #06f;
+        }
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+
+  .warnTopic {
+    margin-left: 20px;
+    color: #f40;
+    display: flex;
+    align-items: center;
+  }
+}

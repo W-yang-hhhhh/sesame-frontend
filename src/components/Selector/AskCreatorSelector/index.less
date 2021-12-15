@@ -1,0 +1,45 @@
+.selectorContainer {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 7px 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  .selectorHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 5px 15px;
+    .close {
+      cursor: pointer;
+    }
+  }
+  .selectorBody {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: scroll;
+    .selectorItem {
+      display: flex;
+      // flex-direction: column;
+      justify-content: space-between;
+      font-weight: normal;
+      font-size: 17px;
+      color: #444;
+      cursor: pointer;
+      padding: 3px 15px;
+      .extra {
+        color: #8590a6;
+        font-size: 13px;
+        font-weight: lighter;
+      }
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}

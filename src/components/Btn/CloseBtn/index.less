@@ -1,0 +1,24 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closeContainer {
+  cursor: pointer;
+  flex: 0;
+  color: #bbb8b8;
+  // width: 30px
+  &:hover {
+    animation: closerotate 1s;
+    color: #1890ff;
+  }
+}
+
+@keyframes closerotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

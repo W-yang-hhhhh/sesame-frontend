@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2983981 */
+  src: url('iconfont.woff2?t=1638449001287') format('woff2'),
+       url('iconfont.woff?t=1638449001287') format('woff'),
+       url('iconfont.ttf?t=1638449001287') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shanchux:before {
+  content: "\e70d";
+}
+
+.icon-bold:before {
+  content: "\e6d9";
+}
+
+.icon-image:before {
+  content: "\e6f5";
+}
+
+.icon-insert_tag_field:before {
+  content: "\e6f7";
+}
+
+.icon-italic:before {
+  content: "\e6f8";
+}
+
+.icon-link:before {
+  content: "\e701";
+}
+
+.icon-quotation_marks:before {
+  content: "\e715";
+}
+
+.icon-richtextbulletedlist:before {
+  content: "\e71a";
+}
+
+.icon-richtextnumberedlist:before {
+  content: "\e71b";
+}
+
+.icon-renwu:before {
+  content: "\e648";
+}
+
+.icon-sheet-full:before {
+  content: "\ea3c";
+}
+
+.icon-daima:before {
+  content: "\e643";
+}
+
+.icon-zitibiaoti:before {
+  content: "\e64e";
+}
+

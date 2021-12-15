@@ -1,0 +1,62 @@
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0 200px 0;
+  background-color: #c2d5d5;
+  .loginTitle {
+    // padding: 70px 0;
+    position: relative;
+    margin-bottom: 50px;
+    justify-self: flex-start;
+    .loginTitleText {
+      font-size: 65px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-text-fill-color: transparent;
+      background: #fff;
+      background-image: url('/img/loginBg.jpg');
+      background-position: 50% 30%;
+      -webkit-background-clip: text;
+      background-size: cover;
+      transition: all 1s;
+      cursor: pointer;
+      &:hover {
+        background-position: 50% 53%;
+      }
+    }
+  }
+  .loginBody {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    padding: 40px 10px;
+    border-radius: 7px;
+    background-image: url('/img/loginBg2.jpg');
+    background-size: cover;
+    background-position: center;
+    .loginIntroduction {
+      width: 300px;
+      color: #f1f1f1;
+      font-size: 18px;
+      text-shadow: 1px 1px #000, -1px -1px #fff;
+    }
+    .loginForm {
+      position: relative;
+      justify-self: center;
+      padding: 30px 20px;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 7px;
+      width: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  }
+}
