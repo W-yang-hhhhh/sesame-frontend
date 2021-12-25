@@ -1,6 +1,7 @@
 import styles from './index.less';
 import { SearchOutlined } from '@ant-design/icons';
 import { useModel } from 'umi';
+import AskModal from '@/components/Modal/NewAsk';
 export default () => {
   const { show, modalaction } = useModel('useAsk', (model) => ({
     show: model.show,
@@ -28,6 +29,7 @@ export default () => {
       >
         提问
       </button>
+      {show && <AskModal />}
     </div>
   );
 };

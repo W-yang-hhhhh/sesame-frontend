@@ -18,6 +18,20 @@ export default () => {
     console.log(1234);
     modalaction && modalaction(false);
   };
+
+  const appraisal = (sentence: string) => {
+    //代码成熟可用正则 替代
+    let sentences = sentence.trim();
+    if (sentences.length == 0) {
+      return '问题不能为空';
+    } else if (sentences.length < 4) {
+      return '问题不能少于四个字';
+    } else if (sentences.slice(-1, 1) !== '?') {
+      return '结尾请加上 ？号';
+    }
+
+    return '';
+  };
   const columns = [
     {
       label: '豆腐i啊话费？',
@@ -78,7 +92,7 @@ export default () => {
               <input className={styles.askInput} type="text" placeholder="请准确输入相关问题" />
               <AskCreatorSelector isShow={showTopic} columns={columns} />
             </div>
-            <span className={styles.empty}>问题不能为空</span>
+            <span className={styles.empty}>{appraisal('22')}</span>
           </div>
         </div>
 

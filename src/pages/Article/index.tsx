@@ -6,14 +6,13 @@ import Modal from '@/components/Modal/NewAsk';
 import { useState } from 'react';
 import { useModel } from 'umi';
 export default () => {
-  const { show, modalaction } = useModel('useAsk', (model) => ({
-    show: model.show,
-    modalaction: model.modelaction,
-  }));
+  // const { show, modalaction } = useModel('useAsk', (model) => ({
+  //   show: model.show,
+  //   modalaction: model.modelaction,
+  // }));
   const columns = [{}, {}, {}, {}, {}, {}, {}];
   return (
     <div className={styles.articleContainer}>
-      {show && <Modal />}
       <div className={styles.articleHeader}>
         <div className={styles.answers}>
           <strong style={{ color: '#06f' }}>390</strong> 个回答

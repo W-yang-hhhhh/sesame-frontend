@@ -1,20 +1,31 @@
 import { Form, Input, Button, Checkbox } from 'antd';
 import styles from './index.less';
+import { userLogin } from '@/service/base';
+import { history } from 'umi';
+import { useRef } from 'react';
 interface Props {
   isshow: boolean;
   event: (a: boolean) => void;
 }
 export default ({ isshow, event }: Props) => {
-  const onFinish = (values: any) => {
-    console.log('Success:', values);
-  };
+  const formRef = useRef(null);
+  // const {run:login,data,loading} = useRequest(userLogin,{ manual: true })
+  const onFinish = async (values: any) => {
+    const res = await userLogin({ username: values.username, password: values.password });
+    console.log(res);
+    if (res?.token) {
+      localStorage.setItem('token', res.token);
 
-  const onFinishFailed = (errorInfo: any) => {
-    console.log('Failed:', errorInfo);
+      history.push('/');
+    }
+
+    return true;
+    // console.log(formRef);
   };
 
   return (
     <Form
+      ref={formRef}
       className={isshow ? styles.loginForm : styles.hidden}
       name="basic"
       labelCol={{
@@ -28,7 +39,6 @@ export default ({ isshow, event }: Props) => {
       }}
       style={{ width: '100%', paddingTop: '20px' }}
       onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
       <Form.Item
@@ -37,7 +47,7 @@ export default ({ isshow, event }: Props) => {
         rules={[
           {
             required: true,
-            message: 'Please input your username!',
+            message: '请输入用户名!',
           },
         ]}
       >
@@ -50,7 +60,7 @@ export default ({ isshow, event }: Props) => {
         rules={[
           {
             required: true,
-            message: 'Please input your password!',
+            message: '请输入密码!',
           },
         ]}
       >
