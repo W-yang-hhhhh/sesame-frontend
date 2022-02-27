@@ -16,7 +16,7 @@ export default ({ isshow, event }: Props) => {
     if (res?.token) {
       localStorage.setItem('token', res.token);
 
-      history.push('/');
+      history.replace('/');
     }
 
     return true;

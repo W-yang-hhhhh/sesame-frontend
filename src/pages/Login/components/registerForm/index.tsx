@@ -1,5 +1,6 @@
 import { Form, Input, Button, Checkbox } from 'antd';
 import styles from './index.less';
+import { Link } from 'umi';
 
 interface Props {
   isshow: boolean;
@@ -86,6 +87,9 @@ export default ({ isshow, event }: Props) => {
         >
           完成注册
         </Button>
+        <Link to="/signin" style={{ float: 'right' }}>
+          去登陆
+        </Link>
       </Form.Item>
     </Form>
   );

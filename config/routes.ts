@@ -11,15 +11,24 @@ const routes: IConfig['routes'] = [
   },
   {
     path: '/',
+    redirect: '/home',
+  },
+  {
+    path: '/home',
+    // redirect:'/home',
     component: '@/layouts/index.tsx',
     // exact:true,
     routes: [
       {
-        path: '/',
+        path: '/home',
         component: '@/pages/Home/index.tsx',
       },
+      // {
+      //   path: 'home/recommend',
+      //   component: '@/pages/Home/index.tsx',
+      // },
       {
-        path: '/recommend',
+        path: '/frontend',
         component: '@/pages/Home/index.tsx',
       },
       {

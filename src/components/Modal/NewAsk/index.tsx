@@ -14,6 +14,7 @@ export default () => {
   }));
   const [showTopic, setShowTopic] = useState(false);
   const [showTag, setShowTag] = useState(false);
+  const [textArea, setTextArea] = useState('');
   const HandlerClose = () => {
     console.log(1234);
     modalaction && modalaction(false);
@@ -26,8 +27,8 @@ export default () => {
       return '问题不能为空';
     } else if (sentences.length < 4) {
       return '问题不能少于四个字';
-    } else if (sentences.slice(-1, 1) !== '?') {
-      return '结尾请加上 ？号';
+    } else if (sentences.slice(-1) !== '?' || sentences.slice(-1) !== '？') {
+      return '结尾请加上?号';
     }
 
     return '';
@@ -89,10 +90,17 @@ export default () => {
           <Avatar size="middle" ishowInfor={false} />
           <div className={styles.topic}>
             <div className={styles.selectorContainer}>
-              <input className={styles.askInput} type="text" placeholder="请准确输入相关问题" />
+              <input
+                className={styles.askInput}
+                type="text"
+                placeholder="请准确输入相关问题"
+                onChange={(e) => {
+                  setTextArea(e.target.value);
+                }}
+              />
               <AskCreatorSelector isShow={showTopic} columns={columns} />
             </div>
-            <span className={styles.empty}>{appraisal('22')}</span>
+            <span className={styles.empty}>{appraisal(textArea)}</span>
           </div>
         </div>
 

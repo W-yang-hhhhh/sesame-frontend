@@ -4,15 +4,15 @@ export default () => {
   const navList = [
     {
       title: '推荐',
-      path: '/',
+      path: '/home',
     },
     {
       title: '前端',
-      path: '/frontend',
+      path: '/home/frontend',
     },
     {
       title: '后端',
-      path: '/backend',
+      path: '/home/backend',
     },
   ];
 
@@ -21,7 +21,12 @@ export default () => {
       <div className={styles.navList}>
         <div className={styles.navContainer}>
           {navList.map((item) => (
-            <NavLink activeClassName={styles.active} className={styles.navItem} to={item.path}>
+            <NavLink
+              activeClassName={styles.active}
+              exact
+              className={styles.navItem}
+              to={item.path}
+            >
               {item.title}
             </NavLink>
           ))}
